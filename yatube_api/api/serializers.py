@@ -15,7 +15,7 @@ class PostSerializer(serializers.ModelSerializer):
 
         model = Post
         fields = ('id', 'text', 'pub_date', 'author', 'image', 'group')
-        read_only_fields = ('id', 'pub_date', 'author')
+        read_only_fields = ('id', 'pub_date', 'author', 'image')
 
 
 class GroupSerializer(serializers.ModelSerializer):
